@@ -84,5 +84,13 @@ tl.fromTo(
     {
       x: 0,
       opacity: 1,
-    }
+    },
+    "-=.3"
   );
+
+var nav = new TimelineLite();
+
+nav.to(".nav-links", {
+  clipPath: 10000 + "px" + "at" + 97.4 + "%" + 5.5 + "%",
+  ease: Power2.easeOut,
+});
